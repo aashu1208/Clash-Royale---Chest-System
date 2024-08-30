@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public enum ChestState { Locked, Unlocking, Unlocked, Collecting}
+public enum ChestState { Locked, Unlocking, Unlocked, Collected}
 
 public class Chest
 {
@@ -16,7 +16,36 @@ public class Chest
 
     public Chest(int coins, int gems, float unlocktime)
     {
+        Coins = coins;
+        Gems = gems;
+        UnlockTime = unlocktime;
+        remainingTime = unlocktime;
+        State = ChestState.Locked;
 
+    }
+    public void StartUnlocking()
+    {
+        State = ChestState.Unlocking;
+    }
+
+    public void UpdateUnlocking(float deltaTime)
+    {
+        if (State == ChestState.Unlocking)
+        {
+            remainingTime -= deltaTime;
+            if (remainingTime <= 0)
+            {
+                State = ChestState.Unlocked;
+            }
+        }
+    }
+    public int CalculateGemCost()
+    {
+        return Mathf.CeilToInt(remainingTime/600); //1 gem per 10 minutes
+    }
+    public void Collect()
+    {
+        State = ChestState.Collected;
 
     }
 

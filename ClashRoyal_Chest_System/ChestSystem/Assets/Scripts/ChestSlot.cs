@@ -4,6 +4,32 @@ using UnityEngine;
 
 public class ChestSlot : MonoBehaviour
 {
+    public Chest CurrentChest { get; private set; }
+    public bool IsEmpty => CurrentChest == null;
+
+    public void AddChest(Chest chest)
+    {
+        if (IsEmpty)
+        {
+            CurrentChest = chest;
+        }
+
+    }
+    public void StartTimer()
+    {
+        if (CurrentChest != null && CurrentChest.State == ChestState.Locked)
+        {
+
+            CurrentChest.StartUnlocking();
+        }
+
+    }
+
+    public void UnlockWithGems()
+    {
+
+
+    }
     // Start is called before the first frame update
     void Start()
     {
