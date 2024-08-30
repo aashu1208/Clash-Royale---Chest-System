@@ -290,7 +290,7 @@ GameObject:
   - component: {fileID: 208440890}
   - component: {fileID: 208440889}
   m_Layer: 5
-  m_Name: Text (Legacy) (2)
+  m_Name: Gems in Numbers
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -348,7 +348,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Coins
+  m_Text: 0
 --- !u!222 &208440890
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -799,7 +799,7 @@ GameObject:
   - component: {fileID: 1990916238}
   - component: {fileID: 1990916237}
   m_Layer: 5
-  m_Name: Text (Legacy) (1)
+  m_Name: Coins in Numbers
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -857,7 +857,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Coins
+  m_Text: 0
 --- !u!222 &1990916238
 CanvasRenderer:
   m_ObjectHideFlags: 0
