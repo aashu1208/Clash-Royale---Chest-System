@@ -12,8 +12,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 46fb6b3cafb0c4041907bbd6e83f4516, type: 3}
   m_Name: Common Chest Data
   m_EditorClassIdentifier: 
-  CoinRanges: 64000000c8000000
-  GemRanges: 0a0000000f000000
+  CoinRanges: 0000000000000000000000000000000000000000000000000000000000000000
+  GemRanges: 0000000000000000000000000000000000000000000000000000000000000000
   MaxSlot: 4
   MaxQueue: 2
   GemCostPerTenMinutes: 1
