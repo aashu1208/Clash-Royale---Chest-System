@@ -12,8 +12,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 46fb6b3cafb0c4041907bbd6e83f4516, type: 3}
   m_Name: Epic Chest Data
   m_EditorClassIdentifier: 
-  CoinRanges: 
-  GemRanges: 
-  MaxSlot: 0
-  MaxQueue: 0
-  GemCostPerTenMinutes: 0
+  CoinRanges: 5802000020030000
+  GemRanges: 2d0000003c000000
+  MaxSlot: 4
+  MaxQueue: 2
+  GemCostPerTenMinutes: 1
