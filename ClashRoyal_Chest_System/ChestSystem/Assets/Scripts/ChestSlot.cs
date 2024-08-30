@@ -27,7 +27,20 @@ public class ChestSlot : MonoBehaviour
 
     public void UnlockWithGems()
     {
+        if (CurrentChest != null && CurrentChest.State == ChestState.Unlocking)
+        {
+            int gemCost = CurrentChest.CalculateGemCost();
+            if (CurrencyManager.instance.HasEnoughgems(gemCost))
+            {
+                CurrencyManager.instance.SpendGems(gemCost);
+                CurrentChest.Collect();
+            }
 
+            else
+            {
+
+            }
+        }
 
     }
     // Start is called before the first frame update

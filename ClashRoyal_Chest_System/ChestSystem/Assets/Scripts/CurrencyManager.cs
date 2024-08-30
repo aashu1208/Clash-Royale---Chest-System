@@ -13,15 +13,27 @@ public class CurrencyManager : MonoBehaviour
     {
         instance = this;
     }
-    // Start is called before the first frame update
-    void Start()
+    public bool HasEnoughgems(int cost)
     {
-        
+        return gems >= cost;
+
     }
 
-    // Update is called once per frame
-    void Update()
+    public void SpendGems(int cost)
     {
-        
+
+        if (HasEnoughgems(cost))
+        {
+            gems -= cost;
+        }
+    }
+    public void AddCoins(int amount)
+    {
+
+    }
+    public void AddGems(int amount)
+    {
+
+
     }
 }
