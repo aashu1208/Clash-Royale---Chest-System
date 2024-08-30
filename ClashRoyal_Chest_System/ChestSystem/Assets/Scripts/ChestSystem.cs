@@ -15,9 +15,35 @@ public class ChestSystem : MonoBehaviour
         chestQueue = new Queue<Chest>(config.MaxQueue);
     }
 
+    public void GenerateRandomChest()
+    {
+        if (slots.Exists(slot => slot.IsEmpty))
+        {
+            int coins = Random.Range(config.CoinRanges[0], config.CoinRanges[1]);
+            int gems = Random.Range(config.GemRanges[0], config.GemRanges[1]);
+            float unlockTime = Random.Range(60f, 3600f);
+            Chest newChest = new Chest(coins, gems, unlockTime);
+
+            foreach (var slot in slots)
+            {
+                if (slot.IsEmpty)
+                {
+                    slot.AddChest(newChest);
+                    break;
+                }
+            }
+        }
+        else
+        {
+            //Show "slots are full" pop-up
+                
+        }
+    }
+
+
     // Update is called once per frame
     void Update()
     {
-        
+        // Handle chest timers here, updating the UI and state as needed
     }
 }
