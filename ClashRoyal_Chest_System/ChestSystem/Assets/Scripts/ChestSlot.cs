@@ -38,20 +38,8 @@ public class ChestSlot : MonoBehaviour
 
             else
             {
-
+                // Show "not enough gems" pop-up
             }
         }
-
-    }
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
     }
 }

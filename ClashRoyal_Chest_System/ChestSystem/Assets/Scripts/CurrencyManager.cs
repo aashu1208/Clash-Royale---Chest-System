@@ -29,11 +29,11 @@ public class CurrencyManager : MonoBehaviour
     }
     public void AddCoins(int amount)
     {
-
+        coins += amount;
     }
     public void AddGems(int amount)
     {
-
+        gems += amount;
 
     }
 }
