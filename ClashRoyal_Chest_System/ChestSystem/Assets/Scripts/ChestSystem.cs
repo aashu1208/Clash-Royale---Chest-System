@@ -40,10 +40,33 @@ public class ChestSystem : MonoBehaviour
         }
     }
 
+    private float GetUnlocktimeForChestType(int chestType)
+    {
+        switch (chestType)
+        {
+            case 0: return 900f;
+            case 1: return 1800f;
+            case 2: return 3600f;
+            case 3: return 900f;
+            default: return 10800f;
+                
+        }
+
+
+    }
+
 
     // Update is called once per frame
     void Update()
     {
         // Handle chest timers here, updating the UI and state as needed
+        foreach (var slot in slots)
+        {
+            if (slot.CurrentChest!= null && slot.CurrentChest.State == ChestState.Unlocking)
+            {
+                slot.CurrentChest.UpdateUnlocking(Time.deltaTime);
+            }
+        }
+
     }
 }
