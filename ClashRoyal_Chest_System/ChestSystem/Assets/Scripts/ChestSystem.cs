@@ -36,6 +36,7 @@ public class ChestSystem : MonoBehaviour
         else
         {
             //Show "slots are full" pop-up
+            UiManager.instance.ShowUIFullPopUp();
                 
         }
     }
