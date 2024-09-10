@@ -215,7 +215,7 @@ GameObject:
   - component: {fileID: 122590221}
   - component: {fileID: 122590220}
   m_Layer: 5
-  m_Name: Image (2)
+  m_Name: Epic chest Image
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -401,6 +401,51 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 156686995}
   m_CullTransparentMesh: 1
+--- !u!1 &176748874
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 176748876}
+  - component: {fileID: 176748875}
+  m_Layer: 0
+  m_Name: Chest
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &176748875
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 176748874}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3d633560cacc511419c81d40253f9c75, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  cheststate: 0
+--- !u!4 &176748876
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 176748874}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 23.356478, y: 206.36328, z: -0.6334686}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &208440887
 GameObject:
   m_ObjectHideFlags: 0
@@ -2138,7 +2183,7 @@ GameObject:
   - component: {fileID: 1339275673}
   - component: {fileID: 1339275672}
   m_Layer: 5
-  m_Name: Image (3)
+  m_Name: Legendary Chest Image
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2654,7 +2699,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &1826852182
 RectTransform:
   m_ObjectHideFlags: 0
@@ -2750,7 +2795,7 @@ GameObject:
   - component: {fileID: 1851128106}
   - component: {fileID: 1851128105}
   m_Layer: 5
-  m_Name: Image
+  m_Name: Chest Common Image
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2820,7 +2865,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1851128106}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 176748875}
+        m_TargetAssemblyTypeName: ChestManager, Assembly-CSharp
+        m_MethodName: OnClick_TapToStart
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1851128106
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3140,7 +3197,7 @@ GameObject:
   - component: {fileID: 1981838812}
   - component: {fileID: 1981838811}
   m_Layer: 5
-  m_Name: Image (1)
+  m_Name: Rare Chest Image
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -3438,3 +3495,4 @@ SceneRoots:
   - {fileID: 519420032}
   - {fileID: 2110711106}
   - {fileID: 787514613}
+  - {fileID: 176748876}

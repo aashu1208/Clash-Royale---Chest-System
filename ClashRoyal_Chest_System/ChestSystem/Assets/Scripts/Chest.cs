@@ -7,13 +7,14 @@ public enum ChestState
 {
     Locked,
     Unlocking,
-    Unlcoked,
+    Unlocked,
     Collected
 
 
 }
 public class Chest
 {
+
     public ChestState State;
     public int Coins { get; private set; }
     public int Gems { get; private set; }
@@ -25,6 +26,18 @@ public class Chest
         if (State == ChestState.Locked)
         {
             State = ChestState.Unlocking;
+            Debug.Log("Unlocking....");
+        }
+
+        else if (State == ChestState.Unlocking)
+        {
+            State = ChestState.Unlocked;
+            Debug.Log("Unlocked..");
+        }
+        else if (State == ChestState.Unlocked)
+        {
+            State = ChestState.Collected;
+            Debug.Log("Collected..");
         }
     }
 
