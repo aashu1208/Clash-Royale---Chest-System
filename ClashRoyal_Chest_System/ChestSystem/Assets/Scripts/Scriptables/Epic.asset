@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: Epic
   m_EditorClassIdentifier: 
   chestType: 2
-  minCoins: 0
-  maxCoins: 0
-  minGems: 0
-  maxGems: 0
+  minCoins: 600
+  maxCoins: 800
+  minGems: 45
+  maxGems: 60

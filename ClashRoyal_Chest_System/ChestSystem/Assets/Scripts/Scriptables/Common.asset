@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: Common
   m_EditorClassIdentifier: 
   chestType: 0
-  minCoins: 0
-  maxCoins: 0
-  minGems: 0
-  maxGems: 0
+  minCoins: 100
+  maxCoins: 200
+  minGems: 10
+  maxGems: 20

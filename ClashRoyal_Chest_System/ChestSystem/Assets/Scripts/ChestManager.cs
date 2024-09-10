@@ -9,7 +9,7 @@ public class ChestManager : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        chest = new Chest();
+        //chest = new Chest();
     }
 
     // Update is called once per frame

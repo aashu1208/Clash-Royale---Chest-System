@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: Rare
   m_EditorClassIdentifier: 
   chestType: 1
-  minCoins: 0
-  maxCoins: 0
-  minGems: 0
-  maxGems: 0
+  minCoins: 300
+  maxCoins: 500
+  minGems: 20
+  maxGems: 40
