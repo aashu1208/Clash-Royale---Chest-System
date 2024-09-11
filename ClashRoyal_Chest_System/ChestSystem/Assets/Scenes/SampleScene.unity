@@ -431,6 +431,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   cheststate: 0
+  chestTexts:
+  - {fileID: 1852306952}
+  - {fileID: 1855954844}
+  - {fileID: 1359126952}
+  - {fileID: 1045655360}
 --- !u!4 &176748876
 Transform:
   m_ObjectHideFlags: 0
